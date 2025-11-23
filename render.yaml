@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: medsight-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 4000
+      - key: DORRA_API_BASE_URL
+        sync: false
+      - key: DORRA_API_TOKEN
+        sync: false
+      - key: OLLAMA_API_URL
+        sync: false
+      - key: OLLAMA_API_KEY
+        sync: false
+      - key: OLLAMA_MODEL
+        value: llama3.2:latest
+    healthCheckPath: /health

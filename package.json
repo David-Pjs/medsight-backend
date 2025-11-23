@@ -1,16 +1,26 @@
 {
   "name": "medsight-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Backend API for MedSight AI - AI-Powered Prescription System for Nigerian Hospitals",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "keywords": [
+    "healthcare",
+    "prescription",
+    "ai",
+    "nigeria",
+    "telemedicine"
+  ],
+  "author": "MedSight AI Team",
+  "license": "MIT",
   "type": "commonjs",
   "dependencies": {
     "axios": "^1.13.2",
